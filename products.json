@@ -1,0 +1,121 @@
+[
+    {
+    "id": 0,
+    "name": "vivo t0",
+    "price": 500,
+     "Color": "green",
+     "ROM"  : 123,
+     "RAM"  : 8,
+     "size" : 12.7,
+     "model_name" : "Vivo t0 12",
+      "model_number" : 23,
+      "camera": "12 Mp Rear Camera, dubo fast. dual-spot",
+     "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+     "Description" : "The phone is very good"
+    },
+    {
+        "id" : 1,
+        "name" : "Techo",
+        "price" : 300,
+        "color" : "pale-green",
+         "ROM"  : 123,
+         "RAM"  : 8,
+         "Size" : 18.7,
+     "model_name" : "Techno f21",
+      "model_number" : 33,
+         "camera": "14 mP, TROI bust,",
+         "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+         "Description": "The phone is good and also has water resistance"
+
+    },
+    {
+        "id"  : 2,
+        "name" : "iphone",
+        "price" : 600,
+         "color" : "pale-white",
+         "ROM" : 123,
+         "RAM"  : 16,
+         "size" : 13.7,
+     "model_name" : "Iphone 14 promax",
+      "model_number" : 10.23,
+         "camera": "dual front camera with Google pixel 1050p",
+         "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+         "Description" : "A high intenesity, super-fast charging, HD1020p-CAMW."
+    },
+    {
+        "id" : 3,
+        "name" : "Samsung-GalaxyS",
+        "price" : 500,
+        "color" : "grey",
+        "ROM"  : 123,
+         "RAM" : 16,
+         "size" : 8.9,
+     "model_name" : "Samsung-GalaxyS24",
+      "model_number" : 31,
+         "camera": "11CAMWI-A3F",
+         "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+         "Description" : "4GLite, 5000amh, High intensity with hard screen protector"
+    },
+    {
+        "id" : 4,
+        "name" : "Tecno-X",
+        "price" : 550,
+        "color" : "aqua",
+        "ROM" : 125,
+        "RAM": 16,
+        "size" : 12.2,
+     "model_name" : "Techno-X21",
+      "model_number" : 26,
+        "camera": "10Mp camera dual duo",
+        "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+        "Description" : "4GLite, 5500amh,HD1040p-CAMW, 5 cameras at the back and dual front-camera"    
+    },
+    {
+     "id" : 5,
+     "name" : "iphone-15",
+      "price": 750,
+      "color" : "whitesmoke",
+      "ROM" : 128,
+      "RAM" : 32,
+      "size" : 11.7,
+     "model_name" : "Iphone-15 promax",
+      "model_number" : 45,
+      "camera": "12Mp camera dual+ Extreme core12px",
+      "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+      "Description" : "5G-network, 9400amh "
+
+    },
+    
+    {
+        "id" : 6,
+        "name" : "HAUWEI",
+         "price": 700,
+         "color" : "whitesmoke",
+         "ROM" : 128,
+         "RAM" : 32,
+         "size" : 13.7,
+     "model_name" : "HAUWEI-XL40",
+      "model_number" : 50,
+         "camera": "19mp, Sun-rays detectorv1.0",
+         "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+         "Description" : "5G-network, 8400amh , HDAMW34, The mobile phoenis a very superfast and it support app-dev."
+   
+       },  
+       
+       {
+        "id" : 7,
+        "name" : "Google-pixel",
+         "price": 750,
+         "color" : "whitesmoke",
+         "ROM" : 128,
+         "RAM" : 32,
+         "size" : 18.7,
+     "model_name" : "Google-pixel-61",
+      "model_number" : 41,
+         "camera": "20Mp camera dual duo, core5px",
+         "Image" : "myweb2-pexels-arnie-chou-1229042.jpg",
+         "Description" : "5G-network, 9400amh, it also has a additional RAM of 2G and water resistance."
+   
+       }  
+
+]

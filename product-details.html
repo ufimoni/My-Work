@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page-content">
+        <div class="product-page">
+            <div class="product-desc">
+                <div class="product-desc-image">
+                      <img src="{{%IMAGES%}}" width="280" height="310">
+                </div>
+                <div class="product-details-info">
+                   <h1>{{%NAME%}}</h1>
+                   <h2 style = "color: green,">{{%Price%}}</h2>
+                     <div class="product-desc-details">
+                        <h3>Products details</h3>
+                        <p class="products-desc-p"><b>ID:</b> {{%ID%}}</p> 
+                        <p class="products-desc-p"><b>Color:</b>{{%Color%}}</p> 
+                        <p class="products-desc-p"> <b>Model-Type:</b> {{%ModelName%}}</p>   
+                        <p class="products-desc-p"> <b>Model Number:</b>{{%ModelNumber%}}</p>  
+                        <p class="products-desc-p"><b>Model Name: </b>{{%Camera%}}</p>  
+                        <p class="products-desc-p"> <b>ROM:</b> {{%ROM%}}</p>           
+                        <p><b>Size:</b>{{%Size%}}</p>
+                     </div>
+                     <h3>Product Decsription</h3>
+                     <p class="product-desc-p">
+                        {{%Description%}}
+                     </p>
+
+                </div>
+            </div>
+            <div>
+                <a href="/produts" class="btn-back">Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

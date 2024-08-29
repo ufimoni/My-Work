@@ -1,11 +1,15 @@
 /// WE ARE TO REUSE THIS FUNCTION AGAIN
 /* IN THIS CODE WE WILL REUSE A FUNCTION TWICE TO DISPLAY THE IMAGES. FROM JSON DATABASE TO BE DISPLAYED ON RHE WEB SERVER
  AND THIS CODE ALSO TAKES A DATA FROM THE DATABASE AND DISPLAYS IT ON THE WEBBROWSERS. SHOWING WHATEVER HAS BEEN
-
+AT THE END WE ARE EXPECTING TO SEE WHATEVER IS IN THE DATABASE IT SHOULD BE DISPLAYED OUT..
                                                                                 */
 const fs = require('fs');
 const url = require('url');
 const http = require ('http');
+const events = require('events');
+
+const replaceHTML = require('./Modules/replacehtml'); // replaceHTML Ccan be any name but it must be used within any code.
+const user = require('./Modules/user'); // user can be used to import the file from the module directory.
 
 ////// READING FILES SYNCHRONOSLLY
 const html = fs.readFileSync('./myweb2/index.html','utf-8');
@@ -14,7 +18,8 @@ let product_list = fs.readFileSync('./myweb2/products.html','utf-8'); // The pro
 let prod_details = fs.readFileSync('./myweb2/product-details.html', 'utf-8');
 
 
-   // WE RETUN THE OUTPUT.
+
+   /*WE RETUN THE OUTPUT.
 // WE ARE CREATING ANOTHER FUNCTION SO THAT IT CAN BE USED
 function replaceHTML(template, products){
 
@@ -32,11 +37,14 @@ function replaceHTML(template, products){
 
     return output;
 }
-
+*/
 
 // create server
-const server = http.createServer((req, res)=>{
-   let {query, pathname: path} = url.parse(req.url, true); // using and parse method to parse it and a boolean statemt true so it can be parsed
+//
+ //Understnading Event Handler
+ const server = http.createServer();
+    server.on('request',(req,res) =>{
+let {query, pathname: path} = url.parse(req.url, true); // using and parse method to parse it and a boolean statemt true so it can be parsed
     console.log(path);
    // let path = req.url;
     if(path === '/'|| path.toLocaleLowerCase()=== '/home'){
@@ -110,10 +118,21 @@ else{
     }
 
    // console.log(req);
+    });
+    server.listen(8000, '127.0.0.1', ()=>{
+      console.log("Running on port: 8000");
+
+    } )
+
+// Emiiting events
+// Starting server.
+let myEmit = new user();
+myEmit.on('Usercreated', (id, name) => {
+    console.log(`a new user ${name} with the ID ${id} has been created`);
 });
 
-// Starting server.
-server.listen(8000, '127.0.0.1',()=>{
-    console.log("Running on port: 8000.");
+myEmit.on('usercreated',  (id, name) => {
+    console.log(`a new user ${name} with the ID ${id} has been added imnto the database`);
 });
-   
+
+myEmit.emit('usercreated','john', 11);

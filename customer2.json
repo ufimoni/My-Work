@@ -1,0 +1,131 @@
+[
+{
+    "name" : "james",
+    "age" : 25,
+    "ismarried" : true,
+    "subscription" : {
+        "type" : "yearly",
+        "renewalDate" : {
+            "day" : 23,
+            "month" : "july",
+            "year" : 2021
+        }
+    },
+    "address" : [
+        "new jersy", "USA" ],
+    "purchase" : [
+        { "name" : "Iphone",
+       "model" : "iphone 12",
+       "price" : 3221
+    },
+    {
+        "name" : "LG-TV",
+        "price" : 15312
+    }
+
+    ]
+},
+{
+    "name" : "mary",
+    "age" : 25,
+    "ismarried" : false,
+    "subscription" : {
+        "type" : "Monthly",
+        "renewalDate" : {
+            "day" : 24,
+            "month" : "june",
+            "year" : 2022
+        }
+    },
+    "address" : [
+        "new york", "USA" ],
+    "purchase" : [
+        { "name" : "Iphone",
+       "model" : "iphone 12",
+       "price" : 3221
+    },
+    {
+        "name" : "SAMSUNG-TV",
+        "price" : 14231
+    }
+
+    ]
+},{
+    "name" : "mary",
+    "age" : 25,
+    "ismarried" : false,
+    "subscription" : {
+        "type" : "weekly",
+        "renewalDate" : {
+            "day" : 25,
+            "month" : "october",
+            "year" : 2023
+        }
+    },
+    "address" : [
+        "washington-dc", "USA" ],
+    "purchase" : [
+        { "name" : "Iphone",
+       "model" : "iphone 12",
+       "price" : 3221
+    },
+    {
+        "name" : "SONY-TV",
+        "price" : 15312
+    }
+
+    ]
+},
+{
+    "name" : "Sarah",
+    "age" : 26,
+    "ismarried" : true,
+    "subscription" : {
+        "type" : "yearly",
+        "renewalDate" : {
+            "day" : 23,
+            "month" : "september",
+            "year" : 2020
+        }
+    },
+    "address" : [
+        "Ontario", "Canada" ],
+    "purchase" : [
+        { "name" : "Techno F1",
+       "model" : "Techno",
+       "price" : 3221
+    },
+    {
+        "name" : "Hauwei-Tv",
+        "price" : 15312
+    }
+
+    ]
+},{
+    "name" : "Thomas",
+    "age" : 29,
+    "ismarried" : true,
+    "subscription" : {
+        "type" : "Monthly",
+        "renewalDate" : {
+            "day" : 10,
+            "month" : "january",
+            "year" : 2024
+        }
+    },
+    "address" : [
+        "texas", "USA" ],
+    "purchase" : [
+        { "name" : "Iphone",
+       "model" : "iphone 14-promax",
+       "price" : 3221
+    },
+    {
+        "name" : "LG-TV",
+        "price" : 16312
+    }
+
+    ]
+}
+
+]

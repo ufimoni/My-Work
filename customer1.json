@@ -1,0 +1,44 @@
+[
+    {
+        "name": "timothy",
+        "age" : 22 ,
+        "ismarried" : false,
+        "subscription" : {
+            "type" : "Yearly",
+            "renewalDate" : {
+                "day" : 23,
+                "month" : "march",
+                "year" : 2021
+            }
+        }
+    },
+
+    {
+        "name": "Mathais",
+        "age" : 20,
+        "ismarried" : true,
+        "subscription" : {
+            "type" : "Monthly",
+            "renewalDate" : {
+                "day" : 23,
+                "month" : "January",
+                "year" : 2024
+            }
+        }
+    }, 
+    
+    {
+        
+        "name": "kingsley",
+        "age" : 43,
+        "ismarried" : true,
+              "subscription" : {
+                    "type" : "Weekly",
+                     "renewalDate" : {
+                          "day" : 21,
+                          "month" : "October",
+                          "year" : 2022
+            }
+        }
+    }
+] 

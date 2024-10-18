@@ -17,6 +17,9 @@ mongoose.connect(process.env.conn_str, {
 }).catch((error) =>{
 console.log("Error has Occured")
 })
+
+/// THIS CODE SHOWS HOW WE ADD DATA AND INSERT DATA FROM EXPRESS INTO OUR DATABASE.
+
 // creating schemas. and setting up schemas
 //unique says no name should be the same.
 const movieschema = new mongoose.Schema({

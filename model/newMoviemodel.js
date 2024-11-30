@@ -31,7 +31,8 @@ const movieSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        default: Date.now()
+        default: Date.now(),
+        select: false
     },
     genres: {
         type: [String],
@@ -52,10 +53,29 @@ const movieSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: [true, 'price Feild Requird']
-    }
+    },
+    createdBy: String
+
+},
+{
+    toJSON :{virtuals: true},
+    toObject :{virtuals: true}
 
 });
+/////// VIRTUAL PROPERTIES.
 
+//// dont use arrow function use the normal function
+movieSchema.virtual('durationInHours').get(function(){
+    return this.duration / 60;
+})
+
+///DOCUMENT MIDDLEWARE.
+/// Executed before documents is saved in database
+
+movieSchema.pre('save',function(next){
+this.createdBy = 'Bertcode.py'/// to display the document created and save it.
+next();
+})
 const Movie = mongoose.model('Movie', movieSchema);
 
 module.exports = Movie;

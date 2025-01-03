@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const validator = reuqire('validator');
 const movieSchema = new mongoose.Schema({
     name: {
         type: String,

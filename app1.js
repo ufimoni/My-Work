@@ -6,6 +6,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const movRoute = require('./Route/moviesRoute');
+const authRoute = require('./Route/authRoute')
 const CustomError = require('./utils/CustomError');
 const globalErrorHandler = require('./controllers/errorcontroller')
 
@@ -35,6 +36,7 @@ app.use((req, res, next) =>{
 
     // uisng the routes
   app.use('/api/v1/movies',movRoute)
+  app.use('/api/v1/users',authRoute)
   // the default route always come last.
   app.all('*', (req,res,next)=>{
     // res.status(404).json({

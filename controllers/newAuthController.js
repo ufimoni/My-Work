@@ -1,4 +1,4 @@
-const User = require('./../model/usermodel') // import the User model
+const User = require('./../model/userModel') // import the User model
 const jwt = require('jsonwebtoken')
 const asyncErrorHandler = require('./../utils/asyncErrorHandler')
 const CustomError = require('./../utils/CustomError')
@@ -58,3 +58,4 @@ res.status(200).json({
 })
 
 })
+
